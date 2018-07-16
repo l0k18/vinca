@@ -1,0 +1,22 @@
+{
+    "name": "vinca",
+    "displayName": "vinca",
+    "description": "theme that makes go more readable",
+    "version": "0.0.1",
+    "publisher": "lokiverloren",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "vinca",
+                "uiTheme": "vs-dark",
+                "path": "./themes/vinca-color-theme.json"
+            }
+        ]
+    }
+}
