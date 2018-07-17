@@ -3,9 +3,9 @@
 	"type": "dark",
 	"colors": {
 		"editor.background": "#000",
-		"editor.foreground": "#fff",
+		"editor.foreground": "#aaa",
 		"activityBarBadge.background": "#a40",
-		"sideBarTitle.foreground": "#ffe"
+		"sideBarTitle.foreground": "#ddd"
 	},
 	"tokenColors": [
 		{
@@ -28,11 +28,19 @@
 			"name": "Variables",
 			"scope": [
 				"variable",
+			],
+			"settings": {
+				"foreground": "#d95"
+			}
+		},
+		{
+			"name": "constants",
+			"scope": [
 				"string constant.other.placeholder"
 			],
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#ffe"
+				"foreground": "#d95"
 			}
 		},
 		{
@@ -56,20 +64,38 @@
 			}
 		},
 		{
-			"name": "Keyword, Storage",
+			"name": "Keyword", 
 			"scope": [
 				"keyword",
-				"storage.type",
-				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#fff"
+				"fontStyle": "bold",
+				"foreground": "#ddd"
 			}
+		},
+		{
+			"name": "KeywordControl", 
+			"scope": [
+				"keyword.control",
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#fff",
+			}
+		},
+		{
+		"name": "Storage",
+		"scope": [
+			"storage.type",
+			"storage.modifier"
+		],
+		"settings": {
+			"foreground": "#ddd"
+		}
 		},
 		{
 			"name": "Operator, Misc",
 			"scope": [
-				"keyword.control",
 				"constant.other.color",
 				"punctuation",
 				"meta.tag",
@@ -83,7 +109,7 @@
 				"keyword.other.substitution"
 			],
 			"settings": {
-				"foreground": "#fff"
+				"foreground": "#c95"		
 			}
 		},
 		{
@@ -101,15 +127,24 @@
 		{
 			"name": "Function, Special Method",
 			"scope": [
+				"support.function",
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#fb7"
+			}
+		},
+		{
+			"name": "Special Method",
+			"scope": [
 				"entity.name.function",
 				"meta.function-call",
 				"variable.function",
-				"support.function",
 				"keyword.other.special-method"
 			],
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#fa0"
+				"foreground": "#fb7"
 			}
 		},
 		{
@@ -145,7 +180,7 @@
 			],
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#ddc"
+				"foreground": "#fa0"
 			}
 		},
 		{
@@ -160,7 +195,7 @@
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
-				"foreground": "#f50"
+				"foreground": "#d95"
 			}
 		},
 		{
